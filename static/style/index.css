@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
 }
 * a {
   text-decoration: none;
@@ -41,7 +41,7 @@ header nav a {
   justify-content: center;
 }
 .hero h1 {
-  font-size: 5.5rem;
+  font-size: 5rem;
   margin-bottom: 1rem;
 }
 .hero a {
@@ -130,6 +130,12 @@ header nav a {
   justify-content: space-around;
   padding: 1.5rem 0;
 }
+.contact .social-media .social_icons a img {
+  transition: linear 1s linear;
+}
+.contact .social-media .social_icons a img:hover {
+  transform: scale(1.2);
+}
 .contact .social-media p {
   font-size: 1.5em;
   text-align: center;
@@ -137,10 +143,10 @@ header nav a {
 
 /* Footer */
 footer {
-  background: #2c3e50;
+  background: #293452;
   color: white;
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 1rem 1rem;
 }
 
 @media (max-width: 768px) {

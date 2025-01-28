@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
 
     a {
         text-decoration: none;
@@ -47,7 +47,7 @@ header {
     justify-content: center;
 
     h1 {
-        font-size: 5.5rem;
+        font-size: 5rem;
         margin-bottom: 1rem;
     }
 
@@ -145,6 +145,14 @@ header {
             display: flex;
             justify-content: space-around;
             padding: 1.5rem 0;
+            a{
+                img{
+                    transition: linear 1s linear;
+                    &:hover{                        
+                        transform: scale(1.2);
+                    }
+                }
+            }
         }
 
         p {
@@ -156,10 +164,10 @@ header {
 
 /* Footer */
 footer {
-    background: #2c3e50;
+    background: rgba($color: #293452, $alpha: 1);
     color: white;
     text-align: center;
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
 }
 
 @media (max-width: 768px) {

@@ -97,11 +97,23 @@ header {
 /* Contact Form */
 .contact {
     padding: 4rem 1rem;
-    background: #f9f9f9;
+    background-image: url(../img/34cf656bfae90e7b86216d9b2fde6e2d.jpg);
+    background-attachment: fixed;
+
+    display: flex;
+    align-items: center;
 
     .contact-form {
         max-width: 600px;
         margin: 0 auto;
+        background-color: white;
+        padding: 1.5rem;
+        border-radius: 1.5rem;
+
+        h2{
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
 
         button {
             background: #5562f4;
@@ -120,7 +132,26 @@ header {
             padding: 0.8rem;
             margin-bottom: 1rem;
             border: 1px solid #ddd;
+    }
+
+    .social-media{
+        max-width: 800px;
+        margin: 0 auto;
+        background-color: white;
+        padding: 1.5rem;
+        border-radius: 1.5rem;
+
+        .social_icons{
+            display: flex;
+            justify-content: space-around;
+            padding: 1.5rem 0;
         }
+
+        p {
+            font-size: 1.5em;
+            text-align: center;
+        }
+    }
 }
 
 /* Footer */

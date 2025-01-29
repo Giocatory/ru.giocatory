@@ -91,10 +91,11 @@
     <section class="contact" id="contact">
       <div class="contact-form">
         <form method="post">
+          {% csrf_token %}
           <h2>Ваше мнение имеет значение!</h2>
-          <input type="text" placeholder="Ваше имя" required />
-          <input type="email" placeholder="Ваш email" required />
-          <textarea rows="5" placeholder="Сообщение" required></textarea>
+          <input type="text" placeholder="Ваше имя" name="user_name" required />
+          <input type="email" placeholder="Ваш email" name="user_email" required />
+          <textarea rows="5" placeholder="Сообщение" name="user_text" required></textarea>
           <button type="submit">Отправить</button>
         </form>
       </div>

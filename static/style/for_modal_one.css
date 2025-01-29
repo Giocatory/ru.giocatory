@@ -36,4 +36,82 @@
 #element-2 .content ul li {
   margin-bottom: 1rem;
   font-size: medium;
+}
+
+@media (max-width: 1225px) {
+  #element-2 {
+    padding: 5rem;
+    width: 50vw;
+    height: 50vh;
+    margin: 0 auto;
+  }
+  #element-2 .content {
+    background-color: white;
+    border-radius: 5px;
+    padding: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    color: black;
+  }
+}
+@media (max-width: 1027px) {
+  #element-2 {
+    padding: 5rem;
+    width: 60vw;
+    height: 60vh;
+    margin: 0 auto;
+  }
+  #element-2 .content {
+    background-color: white;
+    border-radius: 5px;
+    padding: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    color: black;
+  }
+}
+@media (max-width: 842px) {
+  #element-2 {
+    padding: 5rem;
+    width: 80vw;
+    height: 80vh;
+    margin: 0 auto;
+  }
+  #element-2 .content {
+    background-color: white;
+    border-radius: 5px;
+    padding: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    color: black;
+  }
+}
+@media (max-width: 640px) {
+  #element-2 {
+    padding: 5rem;
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+  }
+  #element-2 .content {
+    background-color: white;
+    border-radius: 5px;
+    padding: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    color: black;
+  }
+}
+@media (max-width: 497px) {
+  #element-2 {
+    padding: 1rem;
+  }
+  #element-2 .content {
+    background-color: white;
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    color: black;
+  }
 }/*# sourceMappingURL=for_modal_one.css.map */

@@ -1,85 +1,127 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Знания без границ</title>
-    <link rel="stylesheet" href="static/style/index.css">
-    <link rel="shortcut icon" href="static/img/open-book.png" type="image/x-icon">
-</head>
-<body>
+    <link rel="stylesheet" href="static/style/index.css" />
+    <link
+      rel="shortcut icon"
+      href="static/img/open-book.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="static/style/for_modal_one.css" />
+  </head>
+  <body>
     <!-- Header -->
     <header>
-        <h1><a href="/">Giocatory books</a></h1>
-        <nav>
-            <a href="/">Главная</a>
-            <a href="#books">Книги</a>
-            <a href="#contact">Контакты</a>
-        </nav>
+      <h1><a href="/">Giocatory books</a></h1>
+      <nav>
+        <a href="/">Главная</a>
+        <a href="#books">Книги</a>
+        <a href="#contact">Контакты</a>
+      </nav>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
-        <h1>Доступ к знаниям без границ —<br>учись бесплатно, меняй будущее!</h1>
-        <a>Подробнее</a>
+      <h1>
+        Доступ к знаниям без границ —<br />учись бесплатно, меняй будущее!
+      </h1>
+      <a href="#books">Подробнее</a>
+      <div id="element-1">
+        <div id="element-2">
+          <div class="content">
+            <h3>Электронные книги</h3>
+            <ul >
+              <li>book1</li>
+              <li>book2</li>
+              <li>book3</li>
+              <li>book4</li>
+              <li>book5</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Slider -->
     <section class="slider" id="books">
-        <div class="slide">
-            <h2>Электронные книги</h2>
-            <hr>
-            <p>Новейшая коллекция образовательных материалов</p>
+      <div class="slide">
+        <h2>Электронные книги</h2>
+        <hr />
+        <p>Новейшая коллекция образовательных материалов</p>
 
-            <div class="slide_book">
-                <div class="card">
-                    <img src="static/img/book1.jpg" alt="Book 1">
-                    <h3>Python разработчик</h3>
-                    <p>Обучение языку программирования с самых основ до профессионального уровня.</p>
-                    <a href="#">Читать</a>
-                </div>
-                <div class="card">
-                    <img src="static/img/book2.jpg" alt="Book 2">
-                    <h3>DataScience инженер</h3>
-                    <p>Обучение созданию нейронных сетей, сбор и анализ больших данных, интеграция в бизнес.</p>
-                    <a href="#">Читать</a>
-                </div>
-                <div class="card">
-                    <img src="static/img/book3.png" alt="Book 3">
-                    <h3>Машинное обучение</h3>
-                    <p>Обучение специалистов для разработки и реализации алгоритмов в области компьютерного зрения.</p>
-                    <a href="#">Читать</a>
-                </div>
-            </div>
-
-            <a href="#">Показать полный список</a>
+        <div class="slide_book">
+          <div class="card">
+            <img src="static/img/book1.jpg" alt="Book 1" />
+            <h3>Python разработчик</h3>
+            <p>
+              Обучение языку программирования с самых основ до профессионального
+              уровня.
+            </p>
+            <a href="#">Читать</a>
+          </div>
+          <div class="card">
+            <img src="static/img/book2.jpg" alt="Book 2" />
+            <h3>DataScience инженер</h3>
+            <p>
+              Обучение созданию нейронных сетей, сбор и анализ больших данных,
+              интеграция в бизнес.
+            </p>
+            <a href="#">Читать</a>
+          </div>
+          <div class="card">
+            <img src="static/img/book3.png" alt="Book 3" />
+            <h3>Машинное обучение</h3>
+            <p>
+              Обучение специалистов для разработки и реализации алгоритмов в
+              области компьютерного зрения.
+            </p>
+            <a href="#">Читать</a>
+          </div>
         </div>
+
+        <a id="element-3">Показать полный список</a>
+      </div>
     </section>
 
     <!-- Contact Form -->
     <section class="contact" id="contact">
-        <div class="contact-form">
-            <form>
-                <h2>Ваше мнение имеет значение!</h2>
-                <input type="text" placeholder="Ваше имя" required>
-                <input type="email" placeholder="Ваш email" required>
-                <textarea rows="5" placeholder="Сообщение" required></textarea>
-                <button type="submit">Отправить</button>
-            </form>
+      <div class="contact-form">
+        <form>
+          <h2>Ваше мнение имеет значение!</h2>
+          <input type="text" placeholder="Ваше имя" required />
+          <input type="email" placeholder="Ваш email" required />
+          <textarea rows="5" placeholder="Сообщение" required></textarea>
+          <button type="submit">Отправить</button>
+        </form>
+      </div>
+      <div class="social-media">
+        <p>
+          Напишите свои вопросы или идеи, и давайте вместе сделаем мир знаний
+          ещё доступнее! Каждый ваш отзыв — это шаг к улучшению и новым
+          возможностям. Делитесь своими мыслями!
+        </p>
+        <div class="social_icons">
+          <a href="#"
+            ><img src="static/img/github.png" alt="github" width="70"
+          /></a>
+          <a href="#"
+            ><img src="static/img/telegram.png" alt="telegram" width="70"
+          /></a>
+          <a href="#"
+            ><img src="static/img/youtube-music.png" alt="rutube" width="75"
+          /></a>
         </div>
-        <div class="social-media">
-            <p>Напишите свои вопросы или идеи, и давайте вместе сделаем мир знаний ещё доступнее! Каждый ваш отзыв — это шаг к улучшению и новым возможностям. Делитесь своими мыслями!</p>
-            <div class="social_icons">
-                <a href="#"><img src="static/img/github.png" alt="github" width="70"></a>
-                <a href="#"><img src="static/img/telegram.png" alt="telegram" width="70"></a>
-                <a href="#"><img src="static/img/youtube-music.png" alt="rutube" width="75"></a>
-            </div>
-        </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>© 2025 Знания без границ. Все права защищены.</p>
+      <p>© 2025 Знания без границ. Все права защищены.</p>
     </footer>
-</body>
+
+    <script src="static/scripts/for_modal_one.js"></script>
+  </body>
 </html>

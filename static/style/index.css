@@ -66,6 +66,10 @@ header nav a {
   background: white;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .slider .slide h2 {
   font-size: 2.5rem;
@@ -80,7 +84,38 @@ header nav a {
   border-radius: 2rem;
 }
 .slider .slide p {
-  margin-top: 0.2rem;
+  margin: 0.2rem;
+}
+.slider .slide .slide_book {
+  margin: 2rem;
+  width: 80vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.slider .slide .slide_book .card {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 30rem;
+}
+.slider .slide .slide_book .card img {
+  width: 41%;
+  height: auto;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+.slider .slide a {
+  background: #5562f4;
+  color: white;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 1rem;
 }
 
 /* Contact Form */
@@ -112,7 +147,8 @@ header nav a {
   cursor: pointer;
   margin-top: 1rem;
 }
-.contact .contact-form input, .contact .contact-form textarea {
+.contact .contact-form input,
+.contact .contact-form textarea {
   width: 100%;
   padding: 0.8rem;
   margin-bottom: 1rem;

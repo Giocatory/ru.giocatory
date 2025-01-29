@@ -1,14 +1,15 @@
-* {
+*, html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+  scroll-behavior: smooth;
 }
-* a {
+* a, html a {
   text-decoration: none;
   color: inherit;
 }
-*::-webkit-scrollbar {
+*::-webkit-scrollbar, html::-webkit-scrollbar {
   width: 0;
 }
 

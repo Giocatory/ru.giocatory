@@ -1,42 +1,38 @@
-  #element-1 {
-    display: none;
-    position: fixed;
-    background-color: rgba(16, 6, 103, 0.7);
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-  }
-  
-  #element-1.show {
-    display: block;
-  }
-  
-  #element-2 {
-    padding: 5rem;
-    width: 40vw;
-    height: 40vh;
-    margin: 0 auto;
+#element-1 {
+  display: none;
+  position: fixed;
+  background-color: rgba(16, 6, 103, 0.7);
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
 
-    .content {
-      background-color: white;
-      border-radius: 5px;
-      padding: 2rem;
-      text-align: center;
-      font-size: 2rem;
-      color: black;
+#element-1.show {
+  display: block;
+}
 
-      h3 {
-        margin-bottom: 2rem;
-      }
-
-      ul {
-        list-style-type: none;
-        padding: 0;
-
-        li {
-          margin-bottom: 1rem;
-        }
-      }
-    }
-  }
+#element-2 {
+  padding: 5rem;
+  width: 40vw;
+  height: 40vh;
+  margin: 0 auto;
+}
+#element-2 .content {
+  background-color: white;
+  border-radius: 5px;
+  padding: 2rem;
+  text-align: center;
+  font-size: 2rem;
+  color: black;
+}
+#element-2 .content h3 {
+  margin-bottom: 2rem;
+}
+#element-2 .content ul {
+  list-style-type: none;
+  padding: 0;
+}
+#element-2 .content ul li {
+  margin-bottom: 1rem;
+}/*# sourceMappingURL=for_modal_one.css.map */

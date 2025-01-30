@@ -1,17 +1,16 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Знания без границ</title>
-    <link rel="stylesheet" href="{% static '/style/index.css' %}" />
+    <link rel="stylesheet" href="../static/css/index.css" />
     <link
       rel="shortcut icon"
       href="static/img/open-book.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="{% static '/style/for_modal_one.css' %}" />
+    <link rel="stylesheet" href="../static/css/for_modal_one.css" />
   </head>
   <body>
     <!-- Header -->
@@ -91,7 +90,6 @@
     <section class="contact" id="contact">
       <div class="contact-form">
         <form method="post">
-          {% csrf_token %}
           <h2>Ваше мнение имеет значение!</h2>
           <input type="text" placeholder="Ваше имя" name="user_name" required />
           <input type="email" placeholder="Ваш email" name="user_email" required />
@@ -107,13 +105,13 @@
         </p>
         <div class="social_icons">
           <a href="https://github.com/Giocatory" target="_blank"
-            ><img src="static/img/github.png" alt="github" width="70"
+            ><img src="../static/img/github.png" alt="github" width="70"
           /></a>
           <a href="https://t.me/Giocatory" target="_blank"
-            ><img src="static/img/telegram.png" alt="telegram" width="70"
+            ><img src="../static/img/telegram.png" alt="telegram" width="70"
           /></a>
           <a href="https://rutube.ru/channel/53243113/" target="_blank"
-            ><img src="static/img/youtube-music.png" alt="rutube" width="75"
+            ><img src="../static/img/youtube-music.png" alt="rutube" width="75"
           /></a>
         </div>
       </div>
@@ -124,6 +122,6 @@
       <p>© 2025 Знания без границ. Все права защищены.</p>
     </footer>
 
-    <script src="{% static '/scripts/for_modal_one.js' %}"></script>
+    <script src="../static/js/for_modal_one.js"></script>
   </body>
 </html>

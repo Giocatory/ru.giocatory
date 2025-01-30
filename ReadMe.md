@@ -1,3 +1,4 @@
+```
 your_project/
 ├── app/
 │   ├── core/
@@ -25,3 +26,4 @@ your_project/
 ├── requirements.txt        # Зависимости
 ├── .env                    # Переменные окружения
 └── README.md               # Описание проекта
+```

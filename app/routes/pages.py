@@ -19,3 +19,15 @@ async def success_page(request: Request):
 @router.get("/")
 async def home_page(request: Request):
     return templates.TemplateResponse("index.html", {"request": request})
+
+@router.get("/python")
+async def python_page(request: Request):
+    return templates.TemplateResponse("python.html", {"request": request})
+
+@router.get("/datascience")
+async def datascience_page(request: Request):
+    return templates.TemplateResponse("datascience.html", {"request": request})
+
+@router.get("/machinelearning")
+async def machinelearning_page(request: Request):
+    return templates.TemplateResponse("machinelearning.html", {"request": request})

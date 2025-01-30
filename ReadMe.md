@@ -15,12 +15,12 @@ your_project/
 │   │   │   └── users.py    # Роуты для пользователей
 │   │   └── pages.py        # HTML роуты
 │   ├── static/
-│   │   ├── css/            # Ваши стили
+│   │   ├── css/            # Стили
 │   │   ├── js/             # JavaScript файлы
 │   │   ├── images/         # Обложки книг и др.
 │   │   └── books/          # Папка с электронными книгами (PDF/EPUB)
 │   ├── templates/          # HTML шаблоны
-│   │   └── index.html      # Ваша верстка
+│   │   └── index.html      # Верстка
 │   └── main.py             # Главный файл приложения
 ├── tests/                  # Тесты
 ├── requirements.txt        # Зависимости

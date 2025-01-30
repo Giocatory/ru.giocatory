@@ -3,3 +3,5 @@ uvicorn[standard]
 sqlalchemy
 python-dotenv
 jinja2
+aiosqlite
+pydantic-settings

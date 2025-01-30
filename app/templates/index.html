@@ -4,15 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Знания без границ</title>
-    <link rel="stylesheet" href="../static/css/index.css" />
+    <link rel="stylesheet" href="/static/css/index.css" />
     <link
       rel="shortcut icon"
       href="static/img/open-book.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="../static/css/for_modal_one.css" />
+    <link rel="stylesheet" href="/static/css/for_modal_one.css" />
+    <style>
+      .hidden {
+        display: none;
+      }
+      .alert {
+        position: fixed;
+        top: 10rem;
+        right: 45rem;
+        padding: 15px;
+        background: #4caf50;
+        color: white;
+        border-radius: 5px;
+      }
+    </style>
   </head>
   <body>
+    <div id="notification" class="hidden">
+      <div class="alert">Сообщение успешно отправлено!</div>
+    </div>
     <!-- Header -->
     <header>
       <h1><a href="/">Giocatory books</a></h1>
@@ -33,7 +50,7 @@
         <div id="element-2">
           <div class="content">
             <h3>Электронные книги</h3>
-            <ul >
+            <ul>
               <li>Python разработчик</li>
               <li>Python для сетевого инженера</li>
               <li>DataScience инженер</li>
@@ -54,7 +71,7 @@
 
         <div class="slide_book">
           <div class="card">
-            <img src="static/img/book1.jpg" alt="Book 1" />
+            <img src="/static/img/book1.jpg" alt="Book 1" />
             <h3>Python разработчик</h3>
             <p>
               Обучение языку программирования с самых основ до профессионального
@@ -63,7 +80,7 @@
             <a href="#">Читать</a>
           </div>
           <div class="card">
-            <img src="static/img/book2.jpg" alt="Book 2" />
+            <img src="/static/img/book2.jpg" alt="Book 2" />
             <h3>DataScience инженер</h3>
             <p>
               Обучение созданию нейронных сетей, сбор и анализ больших данных,
@@ -72,7 +89,7 @@
             <a href="#">Читать</a>
           </div>
           <div class="card">
-            <img src="static/img/book3.png" alt="Book 3" />
+            <img src="/static/img/book3.png" alt="Book 3" />
             <h3>Машинное обучение</h3>
             <p>
               Обучение специалистов для разработки и реализации алгоритмов в
@@ -89,11 +106,21 @@
     <!-- Contact Form -->
     <section class="contact" id="contact">
       <div class="contact-form">
-        <form method="post">
+        <form method="post" action="/api/feedback">
           <h2>Ваше мнение имеет значение!</h2>
           <input type="text" placeholder="Ваше имя" name="user_name" required />
-          <input type="email" placeholder="Ваш email" name="user_email" required />
-          <textarea rows="5" placeholder="Сообщение" name="user_text" required></textarea>
+          <input
+            type="email"
+            placeholder="Ваш email"
+            name="user_email"
+            required
+          />
+          <textarea
+            rows="5"
+            placeholder="Сообщение"
+            name="user_text"
+            required
+          ></textarea>
           <button type="submit">Отправить</button>
         </form>
       </div>
@@ -105,13 +132,13 @@
         </p>
         <div class="social_icons">
           <a href="https://github.com/Giocatory" target="_blank"
-            ><img src="../static/img/github.png" alt="github" width="70"
+            ><img src="/static/img/github.png" alt="github" width="70"
           /></a>
           <a href="https://t.me/Giocatory" target="_blank"
-            ><img src="../static/img/telegram.png" alt="telegram" width="70"
+            ><img src="/static/img/telegram.png" alt="telegram" width="70"
           /></a>
           <a href="https://rutube.ru/channel/53243113/" target="_blank"
-            ><img src="../static/img/youtube-music.png" alt="rutube" width="75"
+            ><img src="/static/img/youtube-music.png" alt="rutube" width="75"
           /></a>
         </div>
       </div>
@@ -122,6 +149,17 @@
       <p>© 2025 Знания без границ. Все права защищены.</p>
     </footer>
 
-    <script src="../static/js/for_modal_one.js"></script>
+    <script>
+      // Показать уведомление если есть параметр success в URL
+      document.addEventListener("DOMContentLoaded", function () {
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.has("success")) {
+          const notification = document.getElementById("notification");
+          notification.classList.remove("hidden");
+          setTimeout(() => notification.classList.add("hidden"), 3000);
+        }
+      });
+    </script>
+    <script src="/static/js/for_modal_one.js"></script>
   </body>
 </html>

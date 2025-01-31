@@ -1,12 +1,102 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Python developer</title>
-    <link rel="shortcut icon" href="static/img/open-book.png" type="image/x-icon" />
-</head>
-<body>
-    Python book
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Документация Python</title>
+    <link rel="stylesheet" href="/static/css/python-main.css">
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="header">
+        <h1>Python разработчик</h1>
+        <a href="https://giocatory.ru">https://giocatory.ru</a>
+      </div>
+
+      <!-- Главы меню -->
+      <div class="chapter" data-chapter="1">
+        <div class="chapter-title" onclick="toggleChapter(1)">
+          Глава 1. Введение
+          <span>▼</span>
+        </div>
+        <div class="chapter-content">
+          <div class="section-item" onclick="showContent('intro')">
+            Язык программирования Python
+          </div>
+          <div class="section-item" onclick="showContent('intro-install')">
+            Первые установки
+          </div>
+        </div>
+      </div>
+
+      <div class="chapter" data-chapter="2">
+        <div class="chapter-title" onclick="toggleChapter(2)">
+          Глава 2. Основы Python
+          <span>▼</span>
+        </div>
+        <div class="chapter-content">
+          <div class="section-item" onclick="showContent('syntax')">
+            Синтаксис
+          </div>
+          <div class="section-item" onclick="showContent('data-types')">
+            Типы данных
+          </div>
+        </div>
+      </div>
+
+      <div class="chapter" data-chapter="3">
+        <div class="chapter-title" onclick="toggleChapter(3)">
+          Глава 3. ООП
+          <span>▼</span>
+        </div>
+        <div class="chapter-content">
+          <div class="section-item" onclick="showContent('classes')">
+            Классы
+          </div>
+          <div class="section-item" onclick="showContent('inheritance')">
+            Наследование
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Контент -->
+    <div class="content">
+      <!-- Блоки контента -->
+      <div id="intro" class="content-block active-content">
+        <h2>Введение в Python</h2>
+        <p>Здесь будет ваше содержание для введения...</p>
+        <img src="placeholder.jpg" alt="Пример" />
+      </div>
+      <div id="intro-install" class="content-block active-content">
+        <h2>Первые установки</h2>
+        <p>Здесь будет ваше содержание для установок...</p>
+        <img src="placeholder.jpg" alt="Пример" />
+      </div>
+
+      <div id="syntax" class="content-block">
+        <h2>Синтаксис Python</h2>
+        <pre><code>print("Hello World!")</code></pre>
+      </div>
+
+      <div id="data-types" class="content-block">
+        <h2>Типы данных</h2>
+        <p>Списки, словари, кортежи...</p>
+      </div>
+
+      <div id="classes" class="content-block">
+        <h2>Классы</h2>
+        <p>Пример класса:</p>
+        <pre><code>class MyClass:
+    def __init__(self):
+        pass</code></pre>
+      </div>
+
+      <div id="inheritance" class="content-block">
+        <h2>Наследование</h2>
+        <p>Пример наследования...</p>
+      </div>
+    </div>
+
+    <script src="/static/js/python-main.js"></script>
+  </body>
 </html>

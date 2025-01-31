@@ -1,0 +1,68 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  font-family: Arial, sans-serif;
+}
+
+/* Левая панель */
+.sidebar {
+  width: 300px;
+  background: #f5f5f5;
+  padding: 20px;
+  height: 100vh;
+  overflow-y: auto;
+}
+.sidebar .chapter {
+  margin-bottom: 10px;
+}
+.sidebar .chapter-title {
+  cursor: pointer;
+  padding: 10px;
+  background: #e0e0e0;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sidebar .chapter-content {
+  display: none;
+  padding-left: 15px;
+  margin-top: 5px;
+}
+.sidebar .section-item {
+  padding: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.sidebar .section-item:hover {
+  background: #ddd;
+}
+
+/* Правая часть */
+.content {
+  flex: 1;
+  padding: 30px;
+  background: white;
+}
+.content .content-block {
+  display: none;
+}
+.content .active-content {
+  display: block;
+}
+.content .header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.content .header a {
+  color: #666;
+  text-decoration: none;
+  display: block;
+  margin: 10px 0;
+}/*# sourceMappingURL=python-main.css.map */

@@ -15,37 +15,115 @@
       <!-- Главы меню -->
       <div class="chapter" data-chapter="1">
         <div class="chapter-title" onclick="toggleChapter(1)">
-          Глава 1. Введение
+          Введение
           <span>▼</span>
         </div>
         <div class="chapter-content">
-          <div class="section-item" onclick="showContent('intro')">
-            Язык программирования Python
+          <div class="section-item" onclick="showContent('intro-1')">
+            Роль Python в современном мире
           </div>
-          <div class="section-item" onclick="showContent('intro-install')">
-            Первые установки
+          <div class="section-item" onclick="showContent('intro-2')">
+            Язык программирования
           </div>
         </div>
       </div>
 
       <div class="chapter" data-chapter="2">
         <div class="chapter-title" onclick="toggleChapter(2)">
-          Глава 2. Основы Python
+          Глава 1. Установка, настройка, инструментарий
           <span>▼</span>
         </div>
         <div class="chapter-content">
-          <div class="section-item" onclick="showContent('syntax')">
-            Синтаксис
+          <div class="section-item" onclick="showContent('toolkit-1')">
+            Установка для Widows, Linux, MacOS
           </div>
-          <div class="section-item" onclick="showContent('data-types')">
-            Типы данных
+          <div class="section-item" onclick="showContent('toolkit-2')">
+            Обзор альтернативных реализаций
+          </div>
+          <div class="section-item" onclick="showContent('toolkit-3')">
+            Переменные окружения (PATH)
+          </div>
+          <div class="section-item" onclick="showContent('toolkit-4')">
+            Виртуальные окружения и современные инструменты
+          </div>
+          <div class="section-item" onclick="showContent('toolkit-5')">
+            Редакторы кода
+          </div>
+          <div class="section-item" onclick="showContent('toolkit-6')">
+            Полноценные IDE
+          </div>
+          <div class="section-item" onclick="showContent('toolkit-7')">
+            Интеграция с системами контроля версий
+          </div>
+          <div class="section-item" onclick="showContent('toolkit-8')">
+            Docker: Контейнеризация приложений
+          </div>
+          <div class="section-item" onclick="showContent('toolkit-9')">
+            Инструменты сборки и автоматизации
+          </div>
+          <div class="section-item" onclick="showContent('toolkit-10')">
+            Обзор CI/CD
           </div>
         </div>
       </div>
 
       <div class="chapter" data-chapter="3">
         <div class="chapter-title" onclick="toggleChapter(3)">
-          Глава 3. ООП
+          Глава 2. Основы Python
+          <span>▼</span>
+        </div>
+        <div class="chapter-content">
+          <div class="section-item" onclick="showContent('fundamentals-1')">
+            Синтаксис языка, отступы, PEP8
+          </div>
+          <div class="section-item" onclick="showContent('fundamentals-2')">
+            Комментарии, Документация и docstrings
+          </div>
+          <div class="section-item" onclick="showContent('fundamentals-3')">
+            Переменные и динамическая типизация, правила наименования
+          </div>
+          <div class="section-item" onclick="showContent('fundamentals-4')">
+            Аннотации типов и инструменты проверки
+          </div>
+          <div class="section-item" onclick="showContent('fundamentals-5')">
+            Типы данных, назначение и пояснение
+          </div>
+          <div class="section-item" onclick="showContent('fundamentals-6')">
+            Целые числа
+          </div>
+          <div class="section-item" onclick="showContent('fundamentals-7')">
+            Вещественные числа
+          </div>
+          <div class="section-item" onclick="showContent('fundamentals-8')">
+            Комплексные числа
+          </div>
+          <div class="section-item" onclick="showContent('fundamentals-9')">
+            Логический тип
+          </div>
+          <div class="section-item" onclick="showContent('fundamentals-10')">
+            Создание строк
+          </div>
+          <div class="section-item" onclick="showContent('fundamentals-11')">
+            Краткая работа со строками
+          </div>
+          <div class="section-item" onclick="showContent('fundamentals-12')">
+            Форматирование строк
+          </div>
+          <div class="section-item" onclick="showContent('fundamentals-13')">
+            Основные методы строк
+          </div>
+          <div class="section-item" onclick="showContent('fundamentals-14')">
+            Функция print()
+          </div>
+          <div class="section-item" onclick="showContent('fundamentals-15')">
+            Функция input()
+          </div>
+        </div>
+      </div>
+
+      <div class="chapter" data-chapter="4">
+        <div class="chapter-title" onclick="toggleChapter(4)">
+          Глава 3. Коллекции и структуры данных
           <span>▼</span>
         </div>
         <div class="chapter-content">
@@ -62,25 +140,66 @@
     <!-- Контент -->
     <div class="content">
       <!-- Блоки контента -->
-      <div id="intro" class="content-block active-content">
-        <h2>Введение в Python</h2>
-        <p>Здесь будет ваше содержание для введения...</p>
+      <div id="intro-1" class="content-block active-content">
+        <h2>Роль Python в современном мире</h2>
+        <p>Научные исследования, веб разработка, автоматизация, искусственный интеллект и DevOps...</p>
         <img src="placeholder.jpg" alt="Пример" />
       </div>
-      <div id="intro-install" class="content-block active-content">
-        <h2>Первые установки</h2>
-        <p>Здесь будет ваше содержание для установок...</p>
+      <div id="intro-2" class="content-block active-content">
+        <h2>Язык программирования</h2>
+        <p>Краткое описание: Zen, интерпретация/компиляция, типизация...</p>
         <img src="placeholder.jpg" alt="Пример" />
       </div>
 
-      <div id="syntax" class="content-block">
-        <h2>Синтаксис Python</h2>
+      <div id="toolkit-1" class="content-block">
+        <h2>Инструкции установки для Windows, Linux, MacOS</h2>
         <pre><code>print("Hello World!")</code></pre>
       </div>
+      <div id="toolkit-2" class="content-block">
+        <h2>Обзор альтернативных реализаций</h2>
+        <p>CPython (стандартная реализация).<br>PyPy - особенности и преимущества.</p>
+      </div>
+      <div id="toolkit-3" class="content-block">
+        <h2>Переменные окружения (PATH)</h2>
+        <p>Переменные окружения (PATH)</p>
+      </div>
+      <div id="toolkit-4" class="content-block">
+        <h2>Виртуальные окружения и современные инструменты</h2>
+        <p>Виртуальные окружения: venv и virtualenv.</p>
+        <p>Современные инструменты: pipenv, poetry.</p>
+      </div>
+      <div id="toolkit-5" class="content-block">
+        <h2>Редакторы кода</h2>
+        <p>VScode, Sublime text, Atom</p>
+      </div>
+      <div id="toolkit-6" class="content-block">
+        <h2>Полноценные IDE</h2>
+        <p>PyCharm, Eclipse+PyDev</p>
+      </div>
+      <div id="toolkit-7" class="content-block">
+        <h2>Интеграция с системами контроля версий</h2>
+        <p>Интеграция с системами контроля версий (git) и настройка линтеров/форматтеров (pylint, black)</p>
+      </div>
+      <div id="toolkit-8" class="content-block">
+        <h2>Docker: Контейнеризация приложений</h2>
+        <p>Docker: Контейнеризация приложений</p>
+      </div>
+      <div id="toolkit-9" class="content-block">
+        <h2>Инструменты сборки и автоматизации (Makefile, tox)</h2>
+        <p>Инструменты сборки и автоматизации (Makefile, tox)</p>
+      </div>
+      <div id="toolkit-10" class="content-block">
+        <h2>Обзор CI/CD</h2>
+        <p>Обзор CI/CD: Jenkins, GitLab CI/CD, CircleCI</p>
+      </div>
 
-      <div id="data-types" class="content-block">
-        <h2>Типы данных</h2>
-        <p>Списки, словари, кортежи...</p>
+      <div id="fundamentals-1" class="content-block">
+        <h2>Синтаксис языка, отступы и правила форматирования (PEP8)</h2>
+        <p>Синтаксис языка, отступы и правила форматирования (PEP8)...</p>
+      </div>
+      <div id="fundamentals-2" class="content-block">
+        <h2>Синтаксис языка, отступы и правила форматирования (PEP8)</h2>
+        <p>Синтаксис языка, отступы и правила форматирования (PEP8)...</p>
       </div>
 
       <div id="classes" class="content-block">

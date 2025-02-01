@@ -53,24 +53,23 @@ body {
   flex: 1;
   padding: 30px;
   background: white;
+}
+.content-block {
+  display: none;
+}
 
-  .content-block {
-    display: none;
-  }
+.active-content {
+  display: block;
+}
 
-  .active-content {
-    display: block;
-  }
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
 
-  .header {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-
-  .header a {
-    color: #666;
-    text-decoration: none;
-    display: block;
-    margin: 10px 0;
-  }
+.header a {
+  color: #666;
+  text-decoration: none;
+  display: block;
+  margin: 10px 0;
 }

@@ -18,10 +18,12 @@ body {
   height: 100vh;
   overflow-y: auto;
 }
-.sidebar .chapter {
+
+.chapter {
   margin-bottom: 10px;
 }
-.sidebar .chapter-title {
+
+.chapter-title {
   cursor: pointer;
   padding: 10px;
   background: #e0e0e0;
@@ -30,17 +32,20 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.sidebar .chapter-content {
+
+.chapter-content {
   display: none;
   padding-left: 15px;
   margin-top: 5px;
 }
-.sidebar .section-item {
+
+.section-item {
   padding: 8px;
   cursor: pointer;
   transition: background 0.3s;
 }
-.sidebar .section-item:hover {
+
+.section-item:hover {
   background: #ddd;
 }
 
@@ -50,17 +55,21 @@ body {
   padding: 30px;
   background: white;
 }
-.content .content-block {
+
+.content-block {
   display: none;
 }
-.content .active-content {
+
+.active-content {
   display: block;
 }
-.content .header {
+
+.header {
   text-align: center;
   margin-bottom: 30px;
 }
-.content .header a {
+
+.header a {
   color: #666;
   text-decoration: none;
   display: block;

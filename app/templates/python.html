@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <title>Документация Python</title>
+    <title>Интерактивный учебник по Python</title>
     <link rel="stylesheet" href="/static/css/python-main.css">
   </head>
   <body>
@@ -1115,9 +1115,847 @@
       </div>
 
       <div id="execution_flow-1" class="content-block">
+        <h2>if, elif, else</h2>
+        <p>Особенности сравнения (==, is)</p>
+      </div>
+      <div id="execution_flow-2" class="content-block">
+        <h2>Тернарный оператор</h2>
+        <p>Компактная запись условий</p>
+      </div>
+      <div id="execution_flow-3" class="content-block">
+        <h2>Структурное сопоставление (pattern matching)</h2>
+        <p>Синтаксис, практические примеры, замена сложных цепочек if-elif-else</p>
+      </div>
+      <div id="execution_flow-4" class="content-block">
+        <h2>Цикл for</h2>
+        <p>Итерация по спискам, словарям, строкам</p>
+      </div>
+      <div id="execution_flow-5" class="content-block">
+        <h2>Функция range() для генерации последовательностей</h2>
+        <p>...</p>
+      </div>
+      <div id="execution_flow-6" class="content-block">
+        <h2>Цикл while</h2>
+        <p>Условия выхода, предотвращение бесконечных циклов</p>
+      </div>
+      <div id="execution_flow-7" class="content-block">
+        <h2>Управление выполнением циклов</h2>
+        <p>break, continue, else</p>
+      </div>
+      <div id="execution_flow-8" class="content-block">
+        <h2>Обработка исключений</h2>
+        <p>Конструкции try/except/else/finaly</p>
+      </div>
+      <div id="execution_flow-9" class="content-block">
+        <h2>Обработка исключений</h2>
+        <p>Перечень встроенных исключений (ValueError, TypeError, IndexError и др.)</p>
+      </div>
+      <div id="execution_flow-10" class="content-block">
+        <h2>Создание и использование пользовательских исключений</h2>
+        <p>....</p>
+      </div>
+      <div id="execution_flow-11" class="content-block">
+        <h2>Конструкция raise для возбуждения исключений</h2>
+        <p>Повторное возбуждение ошибок</p>
+      </div>
+      <div id="execution_flow-12" class="content-block">
+        <h2>Контекстные менеджеры и оператор with</h2>
+        <p>....</p>
+      </div>
+      <div id="execution_flow-13" class="content-block">
+        <h2>Принципы работы с ресурсами, автоматическое закрытие файлов</h2>
+        <p>....</p>
+      </div>
+      <div id="execution_flow-14" class="content-block">
+        <h2>Создание собственных контекстных менеджеров</h2>
+        <p>Методы enter и exit</p>
+      </div>
+      
+      <div id="func_prog-1" class="content-block">
+        <h2>Синтаксис определения функций (def), параметры по умолчанию</h2>
+        <p>....</p>
+      </div>
+      <div id="func_prog-2" class="content-block">
+        <h2>Передача аргументов</h2>
+        <p>Позиционные, именованные, *args и **kwargs</p>
+      </div>
+      <div id="func_prog-3" class="content-block">
+        <h2>Различия между return и print</h2>
+        <p>....</p>
+      </div>
+      <div id="func_prog-4" class="content-block">
+        <h2>Синтаксис lambda-выражений, ограничения и примеры использования</h2>
+        <p>....</p>
+      </div>
+      <div id="func_prog-5" class="content-block">
+        <h2>Замыкания</h2>
+        <p>Концепция, примеры и практические примеры</p>
+      </div>
+      <div id="func_prog-6" class="content-block">
+        <h2>Передача функций в качестве аргументов, возврат функций</h2>
+        <p>....</p>
+      </div>
+      <div id="func_prog-7" class="content-block">
+        <h2>Функции высшего порядка и композиция функций</h2>
+        <p>....</p>
+      </div>
+      <div id="func_prog-8" class="content-block">
+        <h2>Использование аннотаций типов для функций</h2>
+        <p>....</p>
+      </div>
+      <div id="func_prog-9" class="content-block">
+        <h2>Создание модулей</h2>
+        <p>Структура файлов и каталогов</p>
+      </div>
+      <div id="func_prog-10" class="content-block">
+        <h2>Импортирование</h2>
+        <p>import, from ... import, as</p>
+      </div>
+      <div id="func_prog-11" class="content-block">
+        <h2>Работа с пакетом</h2>
+        <p>__init__.py, относительный и абсолютный импорт</p>
+      </div>
+      <div id="func_prog-12" class="content-block">
+        <h2>Практические советы по организации кода</h2>
+        <p>....</p>
+      </div>
+
+      <div id="OOP-1" class="content-block">
+        <h2>Основы ООП</h2>
+        <p>Принципы и паттерны</p>
+      </div>
+      <div id="OOP-2" class="content-block">
+        <h2>Создание классов</h2>
+        <p>Конструкторы (init), self</p>
+      </div>
+      <div id="OOP-3" class="content-block">
+        <h2>Атрибуты экземпляра и класса</h2>
+        <p>Динамическе создание атрибутов</p>
+      </div>
+      <div id="OOP-4" class="content-block">
+        <h2>Наследование</h2>
+        <p>Простое, множественное, разрешение конфликтов (MRO)</p>
+      </div>
+      <div id="OOP-5" class="content-block">
+        <h2>Переопределение методов, использование функции super()</h2>
+        <p>....</p>
+      </div>
+      <div id="OOP-6" class="content-block">
+        <h2>Принципы инкапсуляции, соглашения об именовании</h2>
+        <p>Одинарное и двойное подчеркивание...</p>
+      </div>
+      <div id="OOP-7" class="content-block">
+        <h2>Магические методы и перегрузка операторов</h2>
+        <p>....</p>
+      </div>
+      <div id="OOP-8" class="content-block">
+        <h2>Методы str, repr, eq, hash</h2>
+        <p>....</p>
+      </div>
+      <div id="OOP-9" class="content-block">
+        <h2>Перегрузка арифметических и индексных операторов (add, getitem и др.)</h2>
+        <p>....</p>
+      </div>
+      <div id="OOP-10" class="content-block">
+        <h2>Свойства, дескрипторы и data classes</h2>
+        <p>....</p>
+      </div>
+      <div id="OOP-11" class="content-block">
+        <h2>Использование @property, сеттеров и геттеров</h2>
+        <p>....</p>
+      </div>
+      <div id="OOP-12" class="content-block">
+        <h2>Создание дескрипторов (get, set, delete)</h2>
+        <p>....</p>
+      </div>
+      <div id="OOP-13" class="content-block">
+        <h2>Data Classes</h2>
+        <p>Синтаксис, преимущества, примеры применения</p>
+      </div>
+      <div id="OOP-14" class="content-block">
+        <h2>Интеграция с Pydantic для валидации данных</h2>
+        <p>....</p>
+      </div>
+      <div id="OOP-15" class="content-block">
+        <h2>Метапрограммирование и метаклассы</h2>
+        <p>....</p>
+      </div>
+      <div id="OOP-16" class="content-block">
+        <h2>Введение в метаклассы</h2>
+        <p>Зачем и когда использовать</p>
+      </div>
+      <div id="OOP-17" class="content-block">
+        <h2>Примеры создания метаклассов для валидации и создания API</h2>
+        <p>....</p>
+      </div>
+      <div id="OOP-18" class="content-block">
+        <h2>Рефлексия и интроспекция</h2>
+        <p>функции type(), isinstance(), getattr(), setattr(), delattr()</p>
+      </div>
+
+      <div id="file_work-1" class="content-block">
+        <h2>Чтение и запись файлов</h2>
+        <p>....</p>
+      </div>
+      <div id="file_work-2" class="content-block">
+        <h2>Режимы открытия файлов (r, w, a, b)</h2>
+        <p>....</p>
+      </div>
+      <div id="file_work-3" class="content-block">
+        <h2>Работа с менеджером контекста (with) для безопасного доступа к ресурсам</h2>
+        <p>....</p>
+      </div>
+      <div id="file_work-4" class="content-block">
+        <h2>Методы read(), readline(), readlines(), write(), flush()</h2>
+        <p>....</p>
+      </div>
+      <div id="file_work-5" class="content-block">
+        <h2>Бинарные файлы и кодировки</h2>
+        <p>....</p>
+      </div>
+      <div id="file_work-6" class="content-block">
+        <h2>Обработка бинарных данных</h2>
+        <p>Различия между текстовыми и бинарными режимами</p>
+      </div>
+      <div id="file_work-7" class="content-block">
+        <h2>Работа с кодировками, обработка ошибок</h2>
+        <p>UnicodeEncodeError, UnicodeDecodeError</p>
+      </div>
+      <div id="file_work-8" class="content-block">
+        <h2>Сериализация и десериализация</h2>
+        <p>....</p>
+      </div>
+      <div id="file_work-9" class="content-block">
+        <h2>Форматы сериализации</h2>
+        <p>JSON, pickle, YAML, XML</p>
+      </div>
+      <div id="file_work-10" class="content-block">
+        <h2>Практические примеры сохранения и загрузки данных</h2>
+        <p>....</p>
+      </div>
+      <div id="file_work-11" class="content-block">
+        <h2>Особенности безопасности при использовании pickle</h2>
+        <p>....</p>
+      </div>
+      <div id="file_work-12" class="content-block">
+        <h2>Работа с таблицами и другими форматами</h2>
+        <p>....</p>
+      </div>
+      <div id="file_work-13" class="content-block">
+        <h2>CSV-файлы</h2>
+        <p>Чтение, запись и обработка</p>
+      </div>
+      <div id="file_work-14" class="content-block">
+        <h2>РАбота с Excel</h2>
+        <p>openpyxl, pandas</p>
+      </div>
+      <div id="file_work-15" class="content-block">
+        <h2>Интеграция с API и потоковая обработка данных</h2>
+        <p>....</p>
+      </div>
+
+      <div id="func_tools-1" class="content-block">
+        <h2>Определение итераторов</h2>
+        <p>Метод iter и next</p>
+      </div>
+      <div id="func_tools-2" class="content-block">
+        <h2>Создание собственных итераторов, применение в алгоритмах</h2>
+        <p>....</p>
+      </div>
+      <div id="func_tools-3" class="content-block">
+        <h2>Функции-генераторы и оператор yeld</h2>
+        <p>....</p>
+      </div>
+      <div id="func_tools-4" class="content-block">
+        <h2>Генераторы выражения <b>VS</b> list comprehension</h2>
+        <p>Сравнительный анализ</p>
+      </div>
+      <div id="func_tools-5" class="content-block">
+        <h2>Примеры использования для обработки больших объемов данных</h2>
+        <p>....</p>
+      </div>
+      <div id="func_tools-6" class="content-block">
+        <h2>Модуль itertools</h2>
+        <p>....</p>
+      </div>
+      <div id="func_tools-7" class="content-block">
+        <h2>Полезные функции</h2>
+        <p>chain, repeat, combinations, permutations</p>
+      </div>
+      <div id="func_tools-8" class="content-block">
+        <h2>Бесконечные итераторы и эффективная комбинаторика</h2>
+        <p>....</p>
+      </div>
+      <div id="func_tools-9" class="content-block">
+        <h2>Функции высшего порядка</h2>
+        <p>map(), filter(), reduce() из модуля functools</p>
+      </div>
+      <div id="func_tools-10" class="content-block">
+        <h2>Использование lambda-выражений для компактного и выразительного кода</h2>
+        <p>....</p>
+      </div>
+      <div id="func_tools-11" class="content-block">
+        <h2>Инструмент partial из functools для фиксации аргументов функций</h2>
+        <p>....</p>
+      </div>
+
+      <div id="rivalry-1" class="content-block">
+        <h2>Основы асинхронности</h2>
+        <p>....</p>
+      </div>
+      <div id="rivalry-2" class="content-block">
+        <h2>Концепция корутин, принцип async/await</h2>
+        <p>....</p>
+      </div>
+      <div id="rivalry-3" class="content-block">
+        <h2>Обзор eventloop</h2>
+        <p>Задачи и будущие объекты (futures)</p>
+      </div>
+      <div id="rivalry-4" class="content-block">
+        <h2>Библиотека asyncio</h2>
+        <p>....</p>
+      </div>
+      <div id="rivalry-5" class="content-block">
+        <h2>Создание и управление задачами, синхронизация</h2>
+        <p>Event, Lock, Semaphore</p>
+      </div>
+      <div id="rivalry-6" class="content-block">
+        <h2>Работа с сетевыми операциями</h2>
+        <p>Создание асинхронных серверов и клиентов</p>
+      </div>
+      <div id="rivalry-7" class="content-block">
+        <h2>Примеры</h2>
+        <p>Параллельное выполнение запросов, обработка таймаутов</p>
+      </div>
+      <div id="rivalry-8" class="content-block">
+        <h2>Расширенный взгляд на асинхронное программирование</h2>
+        <p>....</p>
+      </div>
+      <div id="rivalry-9" class="content-block">
+        <h2>Библиотека Trio и Curio</h2>
+        <p>Отличия от asyncio, преимущества и случаи применения</p>
+      </div>
+      <div id="rivalry-10" class="content-block">
+        <h2>Сравнение моделей конкурентности и рекомендации по выбору библиотеки</h2>
+        <p>....</p>
+      </div>
+      <div id="rivalry-11" class="content-block">
+        <h2>Параллелизм</h2>
+        <p>Многопоточность и многопроцессность</p>
+      </div>
+      <div id="rivalry-12" class="content-block">
+        <h2>Модуль Threading</h2>
+        <p>Создание потоков, проблемы GIL, синхронизация (Lock, Event, Semaphore)</p>
+      </div>
+      <div id="rivalry-13" class="content-block">
+        <h2>Модуль multiprocessing</h2>
+        <p>Создание процессов, обмен данными между процессами</p>
+      </div>
+      <div id="rivalry-14" class="content-block">
+        <h2>Модуль concurrent.futures</h2>
+        <p>TreadPoolExecutor и ProcessPoolExecutor</p>
+      </div>
+
+      <div id="metaprog-1" class="content-block">
+        <h2>Принципы создания декораторов, вложенные функции</h2>
+        <p>....</p>
+      </div>
+      <div id="metaprog-2" class="content-block">
+        <h2>Использование functools.wrap для сохранения метаданных</h2>
+        <p>....</p>
+      </div>
+      <div id="metaprog-3" class="content-block">
+        <h2>Декораторы с аргументами</h2>
+        <p>Синтаксис и практические примеры (логирование, кеширование, авторизация)</p>
+      </div>
+      <div id="metaprog-4" class="content-block">
+        <h2>Monkey patching</h2>
+        <p>Изменения поведения объектов во время выполнения </p>
+      </div>
+      <div id="metaprog-5" class="content-block">
+        <h2>Инструментальный анализ кода с помощью модуля inspect</h2>
+        <p>....</p>
+      </div>
+      <div id="metaprog-6" class="content-block">
+        <h2>Практические кейсы динамического изменения классов и функций</h2>
+        <p>....</p>
+      </div>
+
+      <div id="new_features-1" class="content-block">
+        <h2>Новый синтаксис match-case, правила сопоставления</h2>
+        <p>....</p>
+      </div>
+      <div id="new_features-2" class="content-block">
+        <h2>Примеры замены сложных цепочек if-elif-else, обработка вложенных структур</h2>
+        <p>....</p>
+      </div>
+      <div id="new_features-3" class="content-block">
+        <h2>Создание data classes с помощью класса dataclasses</h2>
+        <p>Синтаксис, параметры (frozen, order, repr)</p>
+      </div>
+      <div id="new_features-4" class="content-block">
+        <h2>Использование Pydantic</h2>
+        <p>Валидация, сериализация и десериализация, интеграция с FastAPI</p>
+      </div>
+      <div id="new_features-5" class="content-block">
+        <h2>Улучшенная поддержка типов, объединение типов (Union, Optional)</h2>
+        <p>....</p>
+      </div>
+      <div id="new_features-6" class="content-block">
+        <h2>Другие нововведения</h2>
+        <p>Улучшения в обработке ошибок, оптимизация стандартной библиотеки</p>
+      </div>
+
+      <div id="advance_acceleration-1" class="content-block">
+        <h2>JIT-компиляция с Numba</h2>
+        <p>....</p>
+      </div>
+      <div id="advance_acceleration-2" class="content-block">
+        <h2>Установка и базовая настройка Numba</h2>
+        <p>....</p>
+      </div>
+      <div id="advance_acceleration-3" class="content-block">
+        <h2>Примеры ускорения числовых расчетов и обработки массивов</h2>
+        <p>....</p>
+      </div>
+      <div id="advance_acceleration-4" class="content-block">
+        <h2>Плюсы и минусы использования JIT-компиляции в критических участках кода</h2>
+        <p>....</p>
+      </div>
+      <div id="advance_acceleration-5" class="content-block">
+        <h2>Обзор CPython и его особенностей</h2>
+        <p>....</p>
+      </div>
+      <div id="advance_acceleration-6" class="content-block">
+        <h2>PyPy: преимущества за счет JIT, кей использования</h2>
+        <p>....</p>
+      </div>
+      <div id="advance_acceleration-7" class="content-block">
+        <h2>Сравнение производительности, практические рекомендации</h2>
+        <p>....</p>
+      </div>
+      <div id="advance_acceleration-8" class="content-block">
+        <h2>Профилирование и оптимизация кода</h2>
+        <p>....</p>
+      </div>
+      <div id="advance_acceleration-9" class="content-block">
+        <h2>Использование cProfile, timeit, line_profiler и memory_profiler</h2>
+        <p>....</p>
+      </div>
+      <div id="advance_acceleration-10" class="content-block">
+        <h2>Анализ алгоритмической сложности и выбор оптимальных структур данных</h2>
+        <p>....</p>
+      </div>
+      <div id="advance_acceleration-11" class="content-block">
+        <h2>Практические рекомендации по устранению узких мест</h2>
+        <p>....</p>
+      </div>
+
+      <div id="devops-1" class="content-block">
         <h2>Заголовок</h2>
         <p>....</p>
       </div>
+      <div id="devops-2" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="devops-3" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="devops-4" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="devops-5" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="devops-6" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="devops-7" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="devops-8" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="devops-9" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+
+      <div id="web_python-1" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="web_python-2" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="web_python-3" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="web_python-4" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="web_python-5" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="web_python-6" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="web_python-7" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="web_python-8" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="web_python-9" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="web_python-10" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="web_python-11" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="web_python-12" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="web_python-13" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="web_python-14" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="web_python-15" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="web_python-16" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="web_python-17" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="web_python-18" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+
+      <div id="python_db-1" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="python_db-2" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="python_db-3" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="python_db-4" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="python_db-5" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="python_db-6" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="python_db-7" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="python_db-8" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="python_db-9" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+
+      <div id="quality_test-1" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="quality_test-2" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="quality_test-3" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="quality_test-4" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="quality_test-5" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="quality_test-6" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="quality_test-7" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="quality_test-8" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="quality_test-9" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="quality_test-10" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="quality_test-11" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="quality_test-12" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="quality_test-13" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="quality_test-14" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+
+      <div id="profiling-1" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="profiling-2" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="profiling-3" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="profiling-4" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="profiling-5" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="profiling-6" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="profiling-7" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="profiling-8" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="profiling-9" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="profiling-10" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="profiling-11" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+
+      <div id="integro_micro-1" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="integro_micro-2" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="integro_micro-3" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="integro_micro-4" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="integro_micro-5" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="integro_micro-6" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="integro_micro-7" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="integro_micro-8" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="integro_micro-9" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="integro_micro-10" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="integro_micro-11" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="integro_micro-12" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+
+      <div id="python_practic-1" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="python_practic-2" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="python_practic-3" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="python_practic-4" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="python_practic-5" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="python_practic-6" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="python_practic-7" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="python_practic-8" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="python_practic-9" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+
+      <div id="python_self_evolution-1" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="python_self_evolution-2" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="python_self_evolution-3" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="python_self_evolution-4" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="python_self_evolution-5" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="python_self_evolution-6" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="python_self_evolution-7" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="python_self_evolution-8" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="python_self_evolution-9" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+
+      <div id="conclusion-1" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="conclusion-2" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="conclusion-3" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="conclusion-4" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="conclusion-5" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="conclusion-6" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="conclusion-7" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      <div id="conclusion-8" class="content-block">
+        <h2>Заголовок</h2>
+        <p>....</p>
+      </div>
+      
 
     <script src="/static/js/python-main.js"></script>
   </body>

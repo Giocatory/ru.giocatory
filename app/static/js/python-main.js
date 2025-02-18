@@ -20,4 +20,4 @@ function toggleChapter(chapterNum) {
   }
 
   // По умолчанию открываем первый контент
-  window.onload = () => showContent("intro");
+  window.onload = () => showContent("intro-1");
